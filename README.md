@@ -50,7 +50,4 @@ The model is trained using the dataset published on PeerJ Computer Science, whic
 - *Sahana K*
 - *Shalini S*
 
-## Acknowledgements
 
-
-We would like to sincerely thank *SmartBridge* for guiding and providing us this platform to enhance our technical skills in data science, machine learning, and web development. This project helped us to practically apply theoretical concepts and work as a collaborative team.
