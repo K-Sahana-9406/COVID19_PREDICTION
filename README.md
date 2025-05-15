@@ -4,6 +4,7 @@ the aim of this project is to provide a reliable tool for predicting COVID-19 po
 
 ## Project Outcome
 ![image](https://github.com/user-attachments/assets/cc56a9bd-0bf3-4588-99b2-f858c3db94b0)
+## Final Result
 ![Screenshot 2025-05-15 220101](https://github.com/user-attachments/assets/667736d8-c522-43ab-87b6-a0c4f0554c2b)
 
 
