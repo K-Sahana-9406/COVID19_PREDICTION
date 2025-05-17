@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COVID-19 Prediction</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+<div class="form-container">
+    <h2>COVID-19 Prediction </h2>
+    <form method="POST" action="/predict">
+        <h6 style="color:red">** Enter  Yes / No</h6><br><br>
+        <input type="text" name="feature{{1}}" placeholder="Breathing problem" required><br><br>
+        <input type="text" name="feature{{2}}" placeholder="Fever" required><br><br>
+        <input type="text" name="feature{{3}}" placeholder="Dry cough" required><br><br>
+        <input type="text" name="feature{{4}}" placeholder="Sore Throat" required><br><br>
+        <input type="text" name="feature{{5}}" placeholder="Running Nose" required><br><br>
+        <input type="text" name="feature{{6}}" placeholder="Asthma" required><br><br>
+        <input type="text" name="feature{{7}}" placeholder="Chronic Lung Disease" required><br><br>
+        <input type="text" name="feature{{8}}" placeholder="HeadAche" required><br><br>
+        <input type="text" name="feature{{9}}" placeholder="Heart Disease" required><br><br>
+        <input type="text" name="feature{{10}}" placeholder="Diabetes" required><br><br>
+        <input type="text" name="feature{{11}}" placeholder="HyperTension" required><br><br>
+        <input type="text" name="feature{{12}}" placeholder="Fatigue" required><br><br>
+        <input type="text" name="feature{{13}}" placeholder="Gastrointestinal" required><br><br>
+        <input type="text" name="feature{{14}}" placeholder="Abroad Travel" required><br><br>
+        <input type="text" name="feature{{15}}" placeholder="Contact with COVID patient" required><br><br>
+        <input type="text" name="feature{{16}}" placeholder="Attended large gathering" required><br><br>
+        <input type="text" name="feature{{17}}" placeholder="Visited public exposed places" required><br><br>
+        <input type="text" name="feature{{18}}" placeholder="Family working in public exposed places" required><br><br>
+        <input type="text" name="feature{{19}}" placeholder="Wearing mask" required><br><br>
+        <input type="text" name="feature{{20}}" placeholder="Sanitization" required><br><br>
+
+
+        <button class="predict-btn">PREDICT</button>
+
+    </form>
+</div>
+<div class="overlay" id="overlay">
+
+<div class="popup" id="popup">
+  <h3>{{ prediction_text }}</h3>
+  <button id="closePopupBtn">Close</button>
+</div>
+</div>
+<script>
+     const popup = document.getElementById("popup");
+    const overlay = document.getElementById("overlay");
+    const closeBtn = document.getElementById("closePopupBtn");
+    const prediction = "{{ prediction_text }}".trim();
+
+    if (prediction) {
+      overlay.style.display = "block";
+      popup.style.display = "block";
+    }
+
+    closeBtn.addEventListener("click", () => {
+      overlay.style.display = "none";
+      popup.style.display = "none";
+    });
+
+  </script>
+</body>
+</html>
