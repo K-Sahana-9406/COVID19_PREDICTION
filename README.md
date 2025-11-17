@@ -46,7 +46,7 @@ The model is trained using the dataset published on PeerJ Computer Science, whic
 
 - *Gokila S*
 - *Kalaiselvi G*
-- *Madhan Kumar M *
+- *Madhan Kumar M*
 - *Sahana K*
 - *Infant Athina J*
 
