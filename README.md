@@ -44,10 +44,10 @@ The model is trained using the dataset published on PeerJ Computer Science, whic
 ## Contributors
 
 
-- *Pushpaveena S*
-- *Ranjani S*
-- *Reshmi R*
+- *Gokila S*
+- *Kalaiselvi G*
+- *Madhan Kumar M *
 - *Sahana K*
-- *Shalini S*
+- *Infant Athina J*
 
 
